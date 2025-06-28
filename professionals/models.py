@@ -11,3 +11,13 @@ class Professional(models.Model):
     def __str__(self):
         return f"{self.name} - {self.profession}"
     
+class Consultation(models.Model):
+    data = models.DateTimeField("Data da Consulta")
+    profession = models.ForeignKey(
+        'Professional',
+        on_delete=models.CASCADE,
+        related_name='consultas'
+    )
+    
+    def __str__(self):
+        return f"Consulta com {self.profession.name} em {self.data.strftime('%d/%m/%Y %H:%M')}"
