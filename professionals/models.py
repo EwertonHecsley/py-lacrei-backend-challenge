@@ -1,6 +1,6 @@
 from django.db import models
 
-class Professsional(models.Model):
+class Professional(models.Model):
     name = models.CharField("Nome Social", max_length=100)
     profession = models.CharField("Profissão", max_length=100)
     address = models.CharField("Endereço", max_length=200)
