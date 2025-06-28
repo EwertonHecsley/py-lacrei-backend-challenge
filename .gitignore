@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.log
+*.sqlite3
+*.db
+*.pot
+*.pyc
+
+# Virtualenv
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# Django
+*.migrations/
+*.secret
+local_settings.py
+db.sqlite3
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Poetry
+poetry.lock
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
